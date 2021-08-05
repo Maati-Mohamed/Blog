@@ -1,0 +1,172 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-family: montserrat;
+	background-color: #f6f6f6;
+}
+nav{
+	background: #0082e6;
+	height: 80px;
+	width: 100%;
+}
+.logo{
+	color: #fff;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 65px;
+}
+.logo a{
+	color: #fff;
+	background: none;
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: #fff;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 5px;
+}
+a:hover{
+	background: #1b9bff;
+	transition: .5s;
+}
+.checkbtn{
+	font-size: 30px;
+	color: #fff;
+	line-height: 80px;
+	float: right;
+	margin-right: 30px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+.container{
+	width: 80%;
+	margin: 100px auto;
+	margin-top: 40px;
+	text-align: center;
+}
+.container .span{
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 30px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		background-color: rgb(12, 163, 233);
+		height: 100vh;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	nav ul li a:hover{
+		background: none;
+		color: #16181a;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+.artical{
+	width: 80%;
+	margin:100px auto;
+	margin-top: 30px;
+}
+.artical .containar h4{
+	font-size: 30px;
+	color:rgb(94, 92, 92);
+}
+.artical .containar label{
+	font-size: small;
+	display: block;
+	color:gray;
+	margin-top: 10px;
+}
+.artical .containar input[type="text"]{
+	width:100%;
+	height: 40px;
+	border: none;
+	background-color: #f6f6f6;
+	border-bottom: 2px solid rgb(179, 174, 174);
+}
+.artical .containar input:focus{
+	outline: none;
+	border-bottom: 2px solid #09a6bb !important;
+	transition: .5s;
+}
+.artical .containar input[type="submit"]{
+	margin-top: 10px;
+	color:#fff;
+	padding: 10px 35px;
+	background-color: #09a6bb;
+	border-radius: 2px;
+	border: none;
+}
+.artical .containar input[type="submit"]:hover{
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.center{
+	color:red;
+	text-align: center;
+}
+.main{
+	margin-top: 30px;
+	background-color: #fff;
+}
+.main .post{
+	width: 80%;
+	padding:20px;
+	padding-left: 10%;
+}
+.main .post h5{
+	font-size: 25px;
+	color: #09a6bb;
+	margin-bottom: 15px;
+}
+.main .post a button{
+	color : #fff;
+	background-color: #09a6bb;
+	padding: 10px;
+	border: none;
+	margin-top:15px;
+	cursor: pointer;
+}
